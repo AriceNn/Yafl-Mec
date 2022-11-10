@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/93733770c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<section class="sub-header">
+  <nav>
+    <a href="index.html"><img src="img/logo.png"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-xmark" onclick="hideMenu()"></i>  
+        <ul>
+          <li><a href="index.html">ANA SAYFA</a></li>
+          <li><a href="">BÖLÜMLERİMİZ</a></li>
+          <li><a href="about-us.html">HAKKIMIZDA</a></li>
+          <li><a href="">SPONSORLARIMIZ</a></li>        
+          <li><a href="">İLETİŞİM</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+  <h1>Hakkımızda</h1>
+</section>
+
+<!--Hakkımızda içeriği-->
+
+<section class="about-us">
+  <div class="row">
+    <div class="about-col">
+      <h1>Biz YAFL Mechatronics</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Esse iure dolores consequatur, est accusamus beatae perspiciatis 
+        ea quis sunt porro ipsum labore reiciendis corrupti. 
+        Quibusdam porro voluptatem eum velit perferendis dicta nisi libero! 
+        Quas sed fugiat corrupti consequuntur atque voluptatibus asperiores? 
+        Ex in debitis </p>
+    </div>
+    <div class="about-col">
+      <img src="img/background.png" alt="">
+    </div>
+  </div>
+</section>
+<!--Son-->
+
+<section class="footer">
+  <h4>Hakkımızda</h4>
+  <div class="about">
+    <a href="https://www.instagram.com/yaflmechatronics5773/"><img src="img/instagram.png" alt="" style="height: 30px;"></a>
+    <a href="https://www.youtube.com/channel/UCQUagmt4PrG2Xx3oC9xsGRw/about"><img src="img/youtube.png" alt="" style="height: 30px;"></a>
+    <a href="https://www.linkedin.com/in/yafl-mechatronics-b71510189?originalSubdomain=tr"><img src="img/linkedin.png" alt="" style="height: 30px;"></a>
+  </div>
+  <p>Made by Ertuğrul Çakır</p>
+</section>
+
+ <!------JavaScript for toogle menu------>
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/93733770c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<section class="header">
+  <nav>
+    <a href="index.html"><img src="img/logo.png"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-xmark" onclick="hideMenu()"></i>  
+        <ul>
+          <li><a href="index.html">ANA SAYFA</a></li>
+          <li><a href="#department">BÖLÜMLERİMİZ</a></li>
+          <li><a href="about-us.html">HAKKIMIZDA</a></li>
+          <li><a href="">SPONSORLARIMIZ</a></li>        
+          <li><a href="#cta">İLETİŞİM</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <div class="text-box">
+  <h1>Yafl Mechatronics</h1>
+  <p>İstanbulun en iyi okullarından birinin takımı olmanın ve en eski FRC takımlarından biri olma gurunu taşıyarak ülkemizi uluslarası FRC ve FLL yarışmalarında temsil ediyoruz</p>
+  <a href="" class="hero-btn">Daha fazlası için tıklayın</a>
+</div>
+</section>
+
+<!--Bölümler-->
+
+<section class="department" id="department">
+  <h1>Bölümlerimiz</h1>
+  <p>Takımız içerisinde bulunan ana departmanlar</p>
+  <div class="row">
+    <div class="department-col">
+      <h3>Mekanik-Elektronik</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, 
+        expedita error, maiores aliquid deserunt dolore id vero consequatur 
+        perferendis veritatis praesentium recusandae beatae eum culpa, hic ut?</p>
+    </div>
+    
+    <div class="department-col">
+      <h3>Yazılım</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, 
+        expedita error, maiores aliquid deserunt dolore id vero consequatur 
+        perferendis veritatis praesentium recusandae beatae eum culpa, hic ut?</p>
+    </div>
+    
+    <div class="department-col">
+      <h3>PR</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, 
+        expedita error, maiores aliquid deserunt dolore id vero consequatur 
+        perferendis veritatis praesentium recusandae beatae eum culpa, hic ut?</p>
+    </div>
+  </div>
+</section>
+<!--Sponsorlar-->
+<section class="sponsor">
+  <h1>Sponsorlarımız</h1>
+  <p>Bizi bu yolda destekleyen tüm kişi ve kuruluşlara teşekkür ederiz</p>
+
+  <div class="row">
+    <div class="sponsor-col">
+      <img src="img/apple.png" alt="">
+      <div class="layer">
+        <h3>Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Fuga quas magnam aperiam 
+          error quam eius natus nisi distinctio, quasi 
+          inventore ad nulla ab, quibusdam excepturi.</h3>
+      </div>
+    </div>
+    <div class="sponsor-col">
+      <img src="img/mercedes.png" alt="">
+      <div class="layer">
+        <h3>Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Fuga quas magnam aperiam 
+          error quam eius natus nisi distinctio, quasi 
+          inventore ad nulla ab, quibusdam excepturi.</h3>
+      </div>
+    </div>
+    <div class="sponsor-col">
+      <img src="img/microsoft.png" alt="">
+      <div class="layer">
+        <h3>Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Fuga quas magnam aperiam 
+          error quam eius natus nisi distinctio, quasi 
+          inventore ad nulla ab, quibusdam excepturi.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--İletişim-->
+
+<section class="cta" id="cta">
+  <h1>İletişime geçmek için linkten formu doldurun</h1>
+  <a href="https://forms.gle/fkhR5yS5WCDBPgqs6" class="hero-btn">BİZE ULAŞIN</a>
+</section>
+
+<!--Son-->
+
+<section class="footer">
+  <h4>Hakkımızda</h4>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Incidunt magnam iusto sunt quae eligendi ut molestias atque 
+    enim adipisci consectetur. Quis minus, ea ut, fuga nemo, a</p>
+  <div class="about">
+    <a href="https://www.instagram.com/yaflmechatronics5773/"><img src="img/instagram.png" alt="" style="height: 30px;"></a>
+    <a href="https://www.youtube.com/channel/UCQUagmt4PrG2Xx3oC9xsGRw/about"><img src="img/youtube.png" alt="" style="height: 30px;"></a>
+    <a href="https://www.linkedin.com/in/yafl-mechatronics-b71510189?originalSubdomain=tr"><img src="img/linkedin.png" alt="" style="height: 30px;"></a>
+  </div>
+  <p>Made by Ertuğrul Çakır</p>
+</section>
+
+ <!------JavaScript for toogle menu------>
+<script>
+  var navLinks = document.getElementById("navLinks")
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+</script>
+</body>
+</html>
